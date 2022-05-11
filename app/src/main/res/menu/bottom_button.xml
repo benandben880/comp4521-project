@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_schedule"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:title="schedule"/>
+
+    <item android:id="@+id/nav_todoList"
+        android:icon="@drawable/ic_baseline_checklist_24"
+        android:title="todoList"/>
+
+    <item android:id="@+id/nav_memo"
+        android:icon="@drawable/ic_baseline_description_24"
+        android:title="memo"/>
+
+</menu>
