@@ -9,4 +9,5 @@ public class DBStructure {
     public static final String MONTH="month";
     public static final String YEAR="year";
     public static final String TIME="time";
+    public static final String DESCRIPTION="description";
 }

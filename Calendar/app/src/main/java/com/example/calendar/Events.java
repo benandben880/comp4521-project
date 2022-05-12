@@ -1,7 +1,7 @@
 package com.example.calendar;
 
 public class Events {
-    String EVENT,TIME,DATE,MONTH,YEAR;
+    String EVENT,TIME,DATE,MONTH,YEAR,DESCRIPTION;
 
     public String getEVENT() {
         return EVENT;
@@ -43,11 +43,16 @@ public class Events {
         this.YEAR = YEAR;
     }
 
-    public Events(String EVENT, String TIME, String DATE, String MONTH, String YEAR) {
+    public String getDESCRIPTION(){return DESCRIPTION;}
+
+    public void setDESCRIPTION(String DESCRIPTION) {this.DESCRIPTION=DESCRIPTION;}
+
+    public Events(String EVENT, String TIME, String DATE, String MONTH, String YEAR,String DESCRIPTION) {
         this.EVENT = EVENT;
         this.TIME = TIME;
         this.DATE = DATE;
         this.MONTH = MONTH;
         this.YEAR = YEAR;
+        this.DESCRIPTION=DESCRIPTION;
     }
 }

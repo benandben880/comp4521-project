@@ -56,7 +56,7 @@ public class CustomCalendarView extends LinearLayout {
     public CustomCalendarView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         this.context=context;
-        InitializeLayout();
+        Initialize();
         SetUpCalendar();
         PreviousButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -82,6 +82,7 @@ public class CustomCalendarView extends LinearLayout {
                 EditText event_name=addView.findViewById(R.id.event_title);
                 TextView eventtime=addView.findViewById(R.id.eventtime);
                 Button addevent= addView.findViewById(R.id.addevent);
+                TextView descript=addView.findViewById(R.id.description);
                 eventtime.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -112,8 +113,9 @@ public class CustomCalendarView extends LinearLayout {
                 addevent.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        save(event_name.getText().toString(),eventtime.getText().toString(),selectedd,selectedm,selectedy);
+                        save(event_name.getText().toString(),eventtime.getText().toString(),selectedd,selectedm,selectedy,descript.getText().toString());
                         SetUpCalendar();
+                        Log.d("Tag",descript.getText().toString());
                         alertDialog.dismiss();
                     }
                 });
@@ -143,12 +145,12 @@ public class CustomCalendarView extends LinearLayout {
             }
         });
     }
-    public void save(String eventName,String time,String date,String month,String year){
+    public void save(String eventName,String time,String date,String month,String year,String descript){
 
         helper=new DBOpenHelper(context);
         SQLiteDatabase db=helper.getWritableDatabase();
 
-        helper.SaveEvent(eventName,time,date,month,year,db);
+        helper.SaveEvent(eventName,time,date,month,year,descript,db);
         helper.close();
     }
 
@@ -156,12 +158,12 @@ public class CustomCalendarView extends LinearLayout {
         super(context, attrs, defStyleAttr);
     }
 
-    private void InitializeLayout(){
+    private void Initialize(){
         LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view =inflater.inflate(R.layout.calendar_layout,this);
-        NextButton=view.findViewById(R.id.next);
         PreviousButton=view.findViewById(R.id.previous);
         CurrentDate=view.findViewById(R.id.CurrentDate);
+        NextButton=view.findViewById(R.id.next);
         gridView=view.findViewById(R.id.gridview);
         calendar.add(Calendar.MONTH,1);
         calendar.add(Calendar.MONTH,-1);
@@ -196,7 +198,9 @@ public class CustomCalendarView extends LinearLayout {
             @SuppressLint("Range") String next3=cursor.getString(cursor.getColumnIndex(DBStructure.DATE));
             @SuppressLint("Range") String next4=cursor.getString(cursor.getColumnIndex(DBStructure.MONTH));
             @SuppressLint("Range") String next5=cursor.getString(cursor.getColumnIndex(DBStructure.YEAR));
-            Events events=new Events(next,next2,next3,next4,next5);
+            @SuppressLint("Range") String next6=cursor.getString(cursor.getColumnIndex(DBStructure.DESCRIPTION));
+
+            Events events=new Events(next,next2,next3,next4,next5,next6);
             eventList.add(events);
         }helper.close();
         cursor.close();
@@ -212,8 +216,11 @@ public class CustomCalendarView extends LinearLayout {
             @SuppressLint("Range") String next3=cursor.getString(cursor.getColumnIndex(DBStructure.DATE));
             @SuppressLint("Range") String next4=cursor.getString(cursor.getColumnIndex(DBStructure.MONTH));
             @SuppressLint("Range") String next5=cursor.getString(cursor.getColumnIndex(DBStructure.YEAR));
-            Events events=new Events(next,next2,next3,next4,next5);
+            @SuppressLint("Range") String next6=cursor.getString(cursor.getColumnIndex(DBStructure.DESCRIPTION));
+
+            Events events=new Events(next,next2,next3,next4,next5,next6);
             helperA.add(events);
+            Log.d("Tag2",next6);
         }
         helper.close();
         cursor.close();

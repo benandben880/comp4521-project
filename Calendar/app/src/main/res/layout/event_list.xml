@@ -3,14 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="close"
-    android:id="@+id/close"
-    android:layout_gravity="end"
-    android:textSize="10dp"
-    ></Button>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
