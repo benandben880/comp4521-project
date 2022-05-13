@@ -2,6 +2,7 @@ package com.example.calendar;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,33 +39,25 @@ public class CalendatAdapter extends ArrayAdapter {
         Date monthDate=dates.get(position);
         Calendar dateCalendar=Calendar.getInstance();
         dateCalendar.setTime(monthDate);
-        int DayNo= dateCalendar.get(Calendar.DAY_OF_MONTH);
-        int curMonth=tempcalendar.get(Calendar.MONTH)+1;
+        int DateNo= dateCalendar.get(Calendar.DAY_OF_MONTH);
+        int curMonth=tempcalendar.get(Calendar.MONTH);
+        curMonth+=1;
         int curYear=tempcalendar.get(Calendar.YEAR);
-        int disMonth=dateCalendar.get(Calendar.MONTH)+1;
+        int disMonth=dateCalendar.get(Calendar.MONTH);
+        disMonth+=1;
         int disYear =dateCalendar.get(Calendar.YEAR);
         if(view==null){
             view=inflater.inflate(R.layout.calendar_cell,parent,false);
-
         }
         if(disYear==curYear&&disMonth==curMonth){
             view.setBackgroundColor(getContext().getResources().getColor(R.color.teal_200));
+
         }else {
             view.setBackgroundColor(Color.parseColor("#FFFFFF"));
 
         }
         TextView dnumber=view.findViewById(R.id.calendar_date);
-        dnumber.setText(String.valueOf(DayNo));
-        TextView Title=view.findViewById(R.id.event_id);
-        Calendar event_Cal=Calendar.getInstance();
-        ArrayList<String> array=new ArrayList<>();
-        for(int i=0;i< events.size();i++){
-            event_Cal.setTime(StrToDate(events.get(i).getDATE()));
-            if(DayNo==event_Cal.get(Calendar.DAY_OF_MONTH)&&disMonth==event_Cal.get(Calendar.MONTH)+1&&disYear==event_Cal.get(Calendar.YEAR)){
-                array.add(events.get(i).getEVENT());
-                Title.setText(array.size()+" Events");
-            }
-        }
+        dnumber.setText(String.valueOf(DateNo));
         return view;
     }
     private Date StrToDate(String date){

@@ -49,11 +49,5 @@ db.execSQL(CREATE_EVENTS_TABLE);
 
         return db.query(DBStructure.EVENT_TABLE_NAME,Projections,Selection,SelectionArgs,null,null,null);
     }
-    public Cursor ReadEventsperMonth(String month,String year,SQLiteDatabase db) {
-        String[] Projections = {DBStructure.EVENT, DBStructure.TIME, DBStructure.DATE, DBStructure.MONTH, DBStructure.YEAR,DBStructure.DESCRIPTION};
-        String Selection = DBStructure.DATE + "=? and " + DBStructure.YEAR + "=?";
-        String[] SelectionArgs = {month, year};
 
-        return db.query(DBStructure.EVENT_TABLE_NAME, Projections, Selection, SelectionArgs, null, null, null);
-    }
 }
