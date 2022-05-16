@@ -1,8 +1,11 @@
 package com.example.calendar;
 
 import android.annotation.SuppressLint;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.AttributeSet;
@@ -11,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.LinearLayout;
@@ -45,6 +49,8 @@ public class CustomCalendarView extends LinearLayout {
     DBOpenHelper helper;
     AlertDialog alertDialog;
     SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd");
+
+    public static int alarmHour, alarmMin, alarmDay, alarmYear, alarmMonth;
 
 
 
@@ -83,6 +89,12 @@ public class CustomCalendarView extends LinearLayout {
                 TextView event_time=addView.findViewById(R.id.event_time);
                 Button addevent= addView.findViewById(R.id.addevent);
                 TextView descript=addView.findViewById(R.id.description);
+                CheckBox alarm=addView.findViewById(R.id.alarm);
+                Calendar calForAlarm=Calendar.getInstance();
+                calForAlarm.setTime(dates.get(position));
+                alarmDay=calForAlarm.get(Calendar.DAY_OF_MONTH);
+                alarmMonth=calForAlarm.get(Calendar.MONTH);
+                alarmYear=calForAlarm.get(Calendar.YEAR);
                 event_time.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -99,7 +111,8 @@ public class CustomCalendarView extends LinearLayout {
                                 SimpleDateFormat format=new SimpleDateFormat("K:mm a");
                                 String ETime = format.format(c.getTime());
                                 event_time.setText(ETime);
-
+                                alarmMin=c.get(Calendar.MINUTE);
+                                alarmHour=c.get(Calendar.HOUR_OF_DAY);
                             }
                         },h,min,false);
                         timePickerDialog.show();
@@ -111,9 +124,29 @@ public class CustomCalendarView extends LinearLayout {
 
 
                 addevent.setOnClickListener(new OnClickListener() {
+                    @SuppressLint("Range")
                     @Override
                     public void onClick(View view) {
-                        save(event_name.getText().toString(),event_time.getText().toString(),selectedd,selectedm,selectedy,descript.getText().toString());
+                        Log.d("MyTag3","Alarm Check");
+
+                        if(alarm.isChecked()){
+                            Log.d("MyTag3","Alarm should On");
+                            save(event_name.getText().toString(),event_time.getText().toString(),selectedd,selectedm,selectedy,descript.getText().toString(),"AlarmOn");
+                            Calendar CA=Calendar.getInstance();
+                            CA.set(alarmYear,alarmMonth,alarmDay,alarmHour,alarmMin);
+                            DBOpenHelper helper=new DBOpenHelper(context);
+                            SQLiteDatabase db=helper.getReadableDatabase();
+                            Cursor cursor=helper.ReadID(event_name.getText().toString(),event_time.getText().toString(),selectedd,db);
+                            int id=0;
+                            while (cursor.moveToNext()){
+                                id=cursor.getInt(cursor.getColumnIndex(DBStructure.ID));
+                            }cursor.close();
+                            helper.close();
+                            setAlarm(CA,event_name.getText().toString(),event_time.getText().toString(),id);
+                        }else{
+                            save(event_name.getText().toString(),event_time.getText().toString(),selectedd,selectedm,selectedy,descript.getText().toString(),"AlarmOff");
+
+                        }
                         SetUp();
 
                         alertDialog.dismiss();
@@ -145,12 +178,13 @@ public class CustomCalendarView extends LinearLayout {
             }
         });
     }
-    public void save(String eventName,String time,String date,String month,String year,String descript){
+
+    public void save(String eventName,String time,String date,String month,String year,String descript,String alarm){
 
         helper=new DBOpenHelper(context);
         SQLiteDatabase db=helper.getWritableDatabase();
 
-        helper.SaveEvent(eventName,time,date,month,year,descript,db);
+        helper.SaveEvent(eventName,time,date,month,year,descript,alarm,db);
         helper.close();
     }
 
@@ -206,5 +240,14 @@ public class CustomCalendarView extends LinearLayout {
         helper.close();
         cursor.close();
         return helperA;
+    }
+    public void setAlarm(Calendar c, String event,String time,int Code){
+        Intent intent=new Intent(context.getApplicationContext(),AlarmReciver.class);
+        intent.putExtra("event",event);
+        intent.putExtra("time",time);
+        intent.putExtra("id",Code);
+        PendingIntent pi=PendingIntent.getBroadcast(context,Code,intent,PendingIntent.FLAG_ONE_SHOT);
+        AlarmManager manager=(AlarmManager) context.getApplicationContext().getSystemService(Context.ALARM_SERVICE);
+        manager.set(AlarmManager.RTC_WAKEUP,c.getTimeInMillis(),pi);
     }
 }

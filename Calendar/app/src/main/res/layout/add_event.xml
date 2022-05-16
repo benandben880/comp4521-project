@@ -7,7 +7,7 @@
     android:background="#40000000">
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:id="@+id/event_title"
         android:hint="Event Name"
         android:inputType="textShortMessage"
@@ -25,27 +25,43 @@
             android:id="@+id/event_time"
             android:text="00:00AM"
             android:textSize="40sp"
+            android:layout_margin="10dp"
             android:gravity="center"
             android:textColor="@color/black"
             android:background="@color/white"></TextView>
     </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:checked="false"
+        android:text="Alarm"
+        android:textSize="20sp"></CheckBox>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/description"
         android:hint="(Optional)Description"
         android:inputType="textShortMessage"
+        android:textSize="20sp"
         android:layout_margin="10dp"
         android:gravity="center"
         android:background="@color/white"></EditText>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/addevent"
         android:text="Add Event"
         android:textSize="30sp"
+        android:layout_margin="10dp"
         android:textColor="@color/black"
         android:layout_gravity="center"></Button>
+
+
 
 
 </LinearLayout>

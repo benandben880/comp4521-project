@@ -36,10 +36,10 @@ public class recyclerview extends RecyclerView.Adapter<recyclerview.viewHolder> 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, @SuppressLint("RecyclerView") int position) {
         Events events = array.get(position);
-        holder.title.setText(events.getEVENT());
-        holder.time.setText(events.getTIME());
-        holder.date.setText(events.getDATE());
-        holder.des.setText((events.getDESCRIPTION()));
+        holder.title.setText("Event: "+events.getEVENT());
+        holder.time.setText("Time: "+events.getTIME());
+        holder.date.setText("Date: "+events.getDATE());
+        holder.des.setText(("Description: "+events.getDESCRIPTION()));
         holder.deleteevent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
