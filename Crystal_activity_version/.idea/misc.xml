@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.1755" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_checklist_24.xml" value="0.184" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_description_24.xml" value="0.1755" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" value="0.1755" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/layout/activity_schedule.xml" value="0.14407866609662248" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/layout/activity_todo.xml" value="0.1" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/layout/fragment_memo.xml" value="0.12740487387772553" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/layout/fragment_schedule.xml" value="0.12825994014536127" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/layout/fragment_schedule123.xml" value="0.12740487387772553" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/layout/fragment_todoList.xml" value="0.1218469431380932" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/menu/bottom_botton.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/menu/bottom_button.xml" value="0.14407866609662248" />
+        <entry key="..\:/Users/wingc/AndroidStudioProjects/Crystal_activity_version/app/src/main/res/layout/activity_splash.xml" value="0.346875" />
+        <entry key="..\:/Users/wingc/AndroidStudioProjects/Crystal_activity_version/app/src/main/res/layout/activity_todo.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/wingc/AndroidStudioProjects/Crystal_activity_version/app/src/main/res/layout/new_task.xml" value="0.346875" />
+        <entry key="..\:/Users/wingc/AndroidStudioProjects/Crystal_activity_version/app/src/main/res/layout/task_layout.xml" value="0.346875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
