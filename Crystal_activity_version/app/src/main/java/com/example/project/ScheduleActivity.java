@@ -13,12 +13,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class ScheduleActivity extends AppCompatActivity {
+    CustomCalendarView calendarView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        TextView demo = (TextView) findViewById(R.id.scheduletext);
-        demo.setText("the schedule activity");
+        calendarView=(CustomCalendarView) findViewById(R.id.returntomain);
+        //TextView demo = (TextView) findViewById(R.id.scheduletext);
+        //demo.setText("the schedule activity");
 
         BottomNavigationView Nav = findViewById(R.id.bottom_nav);
         Nav.setOnItemSelectedListener(navListener);

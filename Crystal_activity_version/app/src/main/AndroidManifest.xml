@@ -21,6 +21,9 @@
         <activity android:name=".ToDoActivity"></activity>
         <activity android:name=".ScheduleActivity"></activity>
         <activity android:name=".MemoActivity"></activity>
+        <receiver android:name=".AlarmReciver"
+            android:enabled="true"
+            android:exported="true"></receiver>
     </application>
 
 </manifest>

@@ -13,11 +13,12 @@
             android:layout_width="match_parent"
             android:id="@+id/theContentLayout">
 
-            <TextView android:layout_height="wrap_content"
+            <com.example.project.CustomCalendarView
+                android:id="@+id/returntomain"
                 android:layout_width="match_parent"
-                android:id="@+id/scheduletext"
-                android:layout_marginTop="80dp"
-                android:textAlignment="center"/>
+                android:layout_height="match_parent"></com.example.project.CustomCalendarView>
+
+
         </RelativeLayout>
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
