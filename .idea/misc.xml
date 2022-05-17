@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/comp4521-project/app/src/main/res/layout/activity_memo.xml" value="0.14407866609662248" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/comp4521-project/app/src/main/res/layout/activity_schedule.xml" value="0.14407866609662248" />
+        <entry key="..\:/Users/cryst/AndroidStudioProjects/comp4521-project/app/src/main/res/layout/activity_todo.xml" value="0.14407866609662248" />
         <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.1755" />
         <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_checklist_24.xml" value="0.184" />
         <entry key="..\:/Users/cryst/AndroidStudioProjects/project/app/src/main/res/drawable/ic_baseline_description_24.xml" value="0.1755" />

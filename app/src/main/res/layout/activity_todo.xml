@@ -11,7 +11,8 @@ android:layout_height="match_parent">
 
     <RelativeLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:id="@+id/theContentLayout">
+        android:id="@+id/theContentLayout"
+        android:layout_above="@+id/navBarLayout">
 
         <TextView android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -19,6 +20,10 @@ android:layout_height="match_parent">
             android:layout_marginTop="80dp"
             android:textAlignment="center"/>
     </RelativeLayout>
+    <RelativeLayout android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/navBarLayout"
+        android:layout_alignParentBottom="true">
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_height="wrap_content"
@@ -28,13 +33,7 @@ android:layout_height="match_parent">
         android:background="?android:attr/windowBackground"
         app:labelVisibilityMode="labeled"
         />
+    </RelativeLayout>
 </RelativeLayout>
-
-
-
-<!--        app:itemIconTint=""the icon color-->
-<!--        app:itemTextColor=""the icon text color-->
-<!--    app:iteamBackground, app:itemRippleColor-->
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -17,18 +17,26 @@
 
         <RelativeLayout android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:id="@+id/theContentLayout">
+            android:id="@+id/theContentLayout"
+            android:layout_above="@+id/navBarLayout">
 
         </RelativeLayout>
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_nav"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
-            app:menu="@menu/bottom_button"
-            android:background="?android:attr/windowBackground"
-            app:labelVisibilityMode="labeled"
-            />
+            <RelativeLayout android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:id="@+id/navBarLayout"
+                android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_nav"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bottom_button"
+                android:background="?android:attr/windowBackground"
+                app:labelVisibilityMode="labeled"
+                />
+        </RelativeLayout>
+
     </RelativeLayout>
 
 
