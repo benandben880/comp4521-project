@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView Nav = findViewById(R.id.bottom_nav);
         Nav.setOnItemSelectedListener(navListener);
-
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ScheduleFragment()).commit();
+        MenuItem selectedItem = Nav.getMenu().getItem(0);
+        selectedItem.setChecked(true);
 
     }
     @Override
@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case R.id.overflow_setting:
+//                Toast.akeText(this, "clicked setting", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
                 if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
                     Intent noti = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
                     noti.putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
@@ -59,19 +61,20 @@ public class MainActivity extends AppCompatActivity {
     private NavigationBarView.OnItemSelectedListener navListener = new NavigationBarView.OnItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment selectedFragment = null;
             switch(item.getItemId()){
                 case R.id.nav_schedule:
-                    selectedFragment = new ScheduleFragment();
+//                    Intent intent = new Intent(MainActivity.this, ScheduleActivity.class);
+//                    startActivity(intent);
                     break;
                 case R.id.nav_memo:
-                    selectedFragment = new MemoFragment();
+                    Intent intent1 = new Intent(MainActivity.this, MemoActivity.class);
+                    startActivity(intent1);
                     break;
                 case R.id.nav_todoList:
-                    selectedFragment = new TodoFragment();
+                    Intent intent2 = new Intent(MainActivity.this, ToDoActivity.class);
+                    startActivity(intent2);
                     break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
             return true;//selected item
         }
     };
