@@ -89,7 +89,7 @@ public class AddNote extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         if(item.getItemId() == R.id.delete){
             //click the add btn and a gray text pop up in the bottom of UI
-            Toast.makeText(this, "Delete btn is Clicked", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Delete btn is Clicked", Toast.LENGTH_SHORT).show();
 
             onBackPressed();
 
@@ -97,7 +97,7 @@ public class AddNote extends AppCompatActivity {
 
         if(item.getItemId() == R.id.save){
             //click the add btn and a gray text pop up in the bottom of UI
-            Toast.makeText(this, "Save btn is Clicked", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Save btn is Clicked", Toast.LENGTH_SHORT).show();
 
             if(noteTitle.getText().length() != 0){
                 Note note = new Note(noteTitle.getText().toString(), noteDetails.getText().toString(), todaysDate, currentTime); //create without ID --> after inserting, it will return an ID

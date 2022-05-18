@@ -104,13 +104,13 @@ public class EditActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         if(item.getItemId() == R.id.delete){
             //click the add btn and a gray text pop up in the bottom of UI
-            Toast.makeText(this, "Delete btn is Clicked", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Delete btn is Clicked", Toast.LENGTH_SHORT).show();
             onBackPressed();
         }
 
         if(item.getItemId() == R.id.save){
             //click the add btn and a gray text pop up in the bottom of UI
-            Toast.makeText(this, "Save btn is Clicked", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Save btn is Clicked", Toast.LENGTH_SHORT).show();
 
             if(noteTitle.getText().length() != 0){
 //                note.setTitle(noteTitle.getText().toString());

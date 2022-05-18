@@ -91,7 +91,7 @@ public class MemoActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         if(item.getItemId() == R.id.add){
             //click the add btn and a gray text pop up in the bottom of UI
-            Toast.makeText(this, "Add btn is Clicked", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Add btn is Clicked", Toast.LENGTH_SHORT).show();
 
             Intent i = new Intent(this, AddNote.class);
             startActivity(i);

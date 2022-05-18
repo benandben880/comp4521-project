@@ -3,14 +3,14 @@
 
     <item android:id="@+id/nav_schedule"
         android:icon="@drawable/ic_baseline_calendar_today_24"
-        android:title="schedule"/>
+        android:title="Schedule"/>
 
     <item android:id="@+id/nav_todoList"
         android:icon="@drawable/ic_baseline_checklist_24"
-        android:title="todoList"/>
+        android:title="To-do List"/>
 
     <item android:id="@+id/nav_memo"
         android:icon="@drawable/ic_baseline_description_24"
-        android:title="memo"/>
+        android:title="Memo"/>
 
 </menu>

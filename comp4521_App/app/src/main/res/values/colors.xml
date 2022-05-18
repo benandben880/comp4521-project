@@ -7,5 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gainsboro">#DCDCDC	</color>
+    <color name="red">#E46363	</color>
+    <color name="yellow">#FFDD00	</color>
+    <color name="orange">#FF9933	</color>
+    <color name="green">#003319	</color>
+    <color name="darkGreen">#336600	</color>
+    <color name="blue">#66B2FF	</color>
+    <color name="lightblue">#CCFFFF	</color>
+    <color name="calendarHightlight">#E5FFCC	</color>
+
+
 </resources>

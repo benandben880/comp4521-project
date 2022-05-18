@@ -50,10 +50,10 @@ public class CalendatAdapter extends ArrayAdapter {
             view=inflater.inflate(R.layout.calendar_cell,parent,false);
         }
         if(disYear==curYear&&disMonth==curMonth){
-            view.setBackgroundColor(getContext().getResources().getColor(R.color.teal_200));
+            view.setBackgroundColor(getContext().getResources().getColor(R.color.calendarHightlight)); //highlight color
 
         }else {
-            view.setBackgroundColor(Color.parseColor("#FFFFFF"));
+            view.setBackgroundColor(Color.parseColor("#FFFFFF")); //white
 
         }
         TextView dnumber=view.findViewById(R.id.calendar_date);
