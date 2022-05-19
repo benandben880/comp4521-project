@@ -37,7 +37,7 @@ public class ToDoActivityTest {
 
 
     @Test
-    public void testInputTodo() {
+    public void testInputDeleteTodo() {
         Espresso.onView(withId(R.id.fab)).perform(click());
         Espresso.onView(withId(R.id.newTaskText)).perform(typeText(Tasks));
         Espresso.closeSoftKeyboard();
@@ -45,6 +45,11 @@ public class ToDoActivityTest {
 //        Espresso.onView(withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition())
         Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
         Espresso.onView(withText(Tasks)).check(matches(isDisplayed()));
+
+        Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, swipeLeft()));
+        Espresso.onView(withText("CONFIRM")).perform(click());
+        Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
+        Espresso.onView(withText(Deletecontent)).check(doesNotExist());
     }
 
     @Test
@@ -65,23 +70,18 @@ public class ToDoActivityTest {
 
     @Test
     public void testInputDeleteDialog() {
-        Espresso.onView(withId(R.id.fab)).perform(click());
-        Espresso.onView(withId(R.id.newTaskText)).perform(typeText(Deletecontent));
-        Espresso.closeSoftKeyboard();
-        Espresso.onView(withId(R.id.newTaskButton)).perform(click());
-//        Espresso.onView(withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition())
         Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, swipeLeft()));
         Espresso.onView(withText("Are you sure you want to delete this Task?")).check(matches(isDisplayed()));
     }
 
-    @Test
-    public void testInputDelete() {
-        Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, swipeLeft()));
-        Espresso.onView(withText("CONFIRM")).perform(click());
-        Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
-        Espresso.onView(withText(Deletecontent)).check(doesNotExist());
-
-    }
+//    @Test
+//    public void testInputDelete() {
+//        Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, swipeLeft()));
+//        Espresso.onView(withText("CONFIRM")).perform(click());
+//        Espresso.onView(ViewMatchers.withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
+//        Espresso.onView(withText(Deletecontent)).check(doesNotExist());
+//
+//    }
 
 
     @After
