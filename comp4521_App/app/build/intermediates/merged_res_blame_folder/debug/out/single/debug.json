@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\menu_edit_menu.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\menu\\edit_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\menu_save_menu.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\menu\\save_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_custom_list_view.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\custom_list_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_add_note.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_add_note.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_button.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\menu\\bottom_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\menu_action_bar.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\menu\\action_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_singleevent.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\singleevent.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_edittext.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\rounded_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_event_list.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\event_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_content_details.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\content_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_task_layout.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\task_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_details.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\font_mainfont.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\font\\mainfont.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_todo.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_todo.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\menu_add_menu.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\menu\\add_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_checklist_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_checklist_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_calendar_today_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_calendar_today_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_layout_bg.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\layout_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_edit.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_memo.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_memo.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_new_task.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\new_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_check_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_check_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_applogo.png.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\applogo.png"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_add_event.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\add_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_schedule.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_schedule.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_delete_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_edit_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_calendar_cell.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\calendar_cell.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_icon.png.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_notelogo.png.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\notelogo.png"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_description_24.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\drawable\\ic_baseline_description_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\build\\intermediates\\merged_res\\debug\\layout_calendar_layout.xml.flat",
+        "source": "C:\\Users\\gothi\\AndroidStudioProjects\\comp4521_App\\app\\src\\main\\res\\layout\\calendar_layout.xml"
+    }
+]
