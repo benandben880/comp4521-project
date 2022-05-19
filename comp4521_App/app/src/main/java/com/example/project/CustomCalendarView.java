@@ -198,10 +198,9 @@ public class CustomCalendarView extends LinearLayout {
         PreviousButton=view.findViewById(R.id.previous);
         CurrentDate=view.findViewById(R.id.CurrentDate);
         NextButton=view.findViewById(R.id.next);
+        gridView=view.findViewById(R.id.gridview);
         calendar.add(Calendar.MONTH,1);
         calendar.add(Calendar.MONTH,-1);
-        gridView=view.findViewById(R.id.gridview);
-
 
     }
     public void SetUp(){
