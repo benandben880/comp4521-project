@@ -30,13 +30,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         String [] SelectionArgs={event,date,time,des};
         db.delete(DBStructure.EVENT_TABLE_NAME,Selection,SelectionArgs);
     }
-    public void Update(String event,String time,String date,String month,String year,String description,String alarm,SQLiteDatabase db){
-        ContentValues values=new ContentValues();
-        values.put(DBStructure.EVENT,event);
-        String Selection=DBStructure.DATE+"=? and "+DBStructure.EVENT+"=? and "+DBStructure.TIME+"=?";
-        String [] SelectionArgs={event,time,date};
-        db.update(DBStructure.EVENT_TABLE_NAME,values,Selection,SelectionArgs);
-    }
+
 
     public void SaveEvent(String event,String time,String date,String month,String year,String description,String alarm,SQLiteDatabase db){
         ContentValues values=new ContentValues();

@@ -80,17 +80,6 @@ public class CalendatAdapter extends ArrayAdapter {
         return view;
     }
 
-    private Date StrToDate(String date){
-        SimpleDateFormat format=new SimpleDateFormat("yyyy-MMMM-dd");
-        Date d = null;
-        try {
-            d = format.parse(date);
-
-        } catch (java.text.ParseException e) {
-            e.printStackTrace();
-        }
-        return d;
-    }
 
     @Override
     public int getCount() {
