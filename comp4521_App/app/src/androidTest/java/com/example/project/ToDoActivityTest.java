@@ -28,7 +28,8 @@ public class ToDoActivityTest {
     @Rule
     public ActivityTestRule <ToDoActivity> mTodoActivityRule = new ActivityTestRule<>(ToDoActivity.class);
 
-    private String Tasks = "buy egg";
+    private String Tasks = "buy cake";
+    private String Tasks2 = "buy cheese";
     private String Deletecontent = "delete";
 
     @Before
@@ -60,7 +61,7 @@ public class ToDoActivityTest {
     @Test
     public void testInputAgain() {
         Espresso.onView(withId(R.id.fab)).perform(click());
-        Espresso.onView(withId(R.id.newTaskText)).perform(typeText(Tasks));
+        Espresso.onView(withId(R.id.newTaskText)).perform(typeText(Tasks2));
         Espresso.closeSoftKeyboard();
         Espresso.onView(withId(R.id.newTaskButton)).perform(click());
 //        Espresso.onView(withId(R.id.tasksRecyclerView)).perform(RecyclerViewActions.actionOnItemAtPosition())
