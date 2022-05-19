@@ -64,4 +64,13 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
         return db.query(DBStructure.EVENT_TABLE_NAME,Projections,Selection,SelectionArgs,null,null,null);
     }
+
+    //recovered
+    public Cursor ReadEventsperMonth(String month,String year,SQLiteDatabase db) {
+        String[] Projections = {DBStructure.EVENT, DBStructure.TIME, DBStructure.DATE, DBStructure.MONTH, DBStructure.YEAR,DBStructure.DESCRIPTION};
+        String Selection = DBStructure.MONTH + "=? and " + DBStructure.YEAR + "=?";
+        String[] SelectionArgs = {month, year};
+
+        return db.query(DBStructure.EVENT_TABLE_NAME, Projections, Selection, SelectionArgs, null, null, null);
+    }
 }

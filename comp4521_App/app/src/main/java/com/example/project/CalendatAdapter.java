@@ -58,8 +58,28 @@ public class CalendatAdapter extends ArrayAdapter {
         }
         TextView dnumber=view.findViewById(R.id.calendar_date);
         dnumber.setText(String.valueOf(DateNo));
+
+        TextView Title=view.findViewById(R.id.event_id);
+        Calendar event_Cal=Calendar.getInstance();
+        ArrayList<String> array=new ArrayList<>();
+        Log.d("call", "this get view is called");
+        Log.d("eventsize", "event size is: " + DateNo + " " + disMonth + " " + disYear + " " + events.size());
+        for(int i=0;i< events.size();i++){
+            //event_Cal.setTime(StrToDate(events.get(i).getDATE()));
+            Log.d("log to see", "log to see: " + events.get(i).getDATE());
+            //int date = Integer.valueOf(StrToDate(events.get(i).getDATE()));
+            String substring = events.get(i).getDATE().length() > 2 ? events.get(i).getDATE().substring(events.get(i).getDATE().length() - 2) : events.get(i).getDATE();
+            int dateint = Integer.parseInt(substring);
+            int date = 18;
+            if(DateNo==dateint && disMonth==event_Cal.get(Calendar.MONTH)+1&&disYear==event_Cal.get(Calendar.YEAR)){
+                array.add(events.get(i).getEVENT());
+                Log.d("arraysize", "arraySize is: " + array.size());
+                Title.setText(array.size()  +" Events");
+            }
+        }
         return view;
     }
+
     private Date StrToDate(String date){
         SimpleDateFormat format=new SimpleDateFormat("yyyy-MMMM-dd");
         Date d = null;

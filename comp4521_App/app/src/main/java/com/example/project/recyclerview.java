@@ -19,6 +19,7 @@ public class recyclerview extends RecyclerView.Adapter<recyclerview.viewHolder> 
     Context context;
     ArrayList<Events> array;
     DBOpenHelper helper;
+    CustomCalendarView calendarview;
 
     public recyclerview(Context context, ArrayList<Events> array) {
         this.context = context;
@@ -49,6 +50,8 @@ public class recyclerview extends RecyclerView.Adapter<recyclerview.viewHolder> 
                 db.close();
                 array.remove(position);
                 notifyDataSetChanged();
+                //notifyItemChanged(position);
+
             }
         });
     }

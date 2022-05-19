@@ -203,7 +203,7 @@ public class CustomCalendarView extends LinearLayout {
         calendar.add(Calendar.MONTH,-1);
 
     }
-    private void SetUp(){
+    public void SetUp(){
         SimpleDateFormat curMon=new SimpleDateFormat("yyyy-MM");
         String currentDate=curMon.format(calendar.getTime());
         CurrentDate.setText(currentDate);
@@ -213,12 +213,41 @@ public class CustomCalendarView extends LinearLayout {
         int FirstDayMonth=monthCalendar.get(Calendar.DAY_OF_WEEK);
         FirstDayMonth-=1;
         monthCalendar.add(Calendar.DAY_OF_MONTH,-FirstDayMonth);
+        //recovered
+        EventListHelperM(showMonth.format(calendar.getTime()),showYear.format(calendar.getTime()));
+        Log.d("Month_and_Year", "get month year is: " + showMonth.format(calendar.getTime()) + " " + showYear.format(calendar.getTime()));
         while(dates.size()<42){
             dates.add(monthCalendar.getTime());
             monthCalendar.add(Calendar.DAY_OF_MONTH,1);
         }
         calendarAdapter=new CalendatAdapter(context,dates,calendar,eventList);
         gridView.setAdapter(calendarAdapter);
+    }
+
+    //recovered
+    public void EventListHelperM(String month, String year){
+        helper =new DBOpenHelper(context);
+        SQLiteDatabase db= helper.getReadableDatabase();
+        Cursor cursor=helper.ReadEventsperMonth(month,year,db);
+        Log.d("eventSize", " yoo event size is: " + eventList.size());
+        eventList.clear();
+        //int count = 0;
+        while(cursor.moveToNext()){
+            Log.d("whileLoop", "in the while loop");
+            @SuppressLint("Range") String next=cursor.getString(cursor.getColumnIndex(DBStructure.EVENT));
+            @SuppressLint("Range") String next2=cursor.getString(cursor.getColumnIndex(DBStructure.TIME));
+            @SuppressLint("Range") String next3=cursor.getString(cursor.getColumnIndex(DBStructure.DATE));
+            @SuppressLint("Range") String next4=cursor.getString(cursor.getColumnIndex(DBStructure.MONTH));
+            @SuppressLint("Range") String next5=cursor.getString(cursor.getColumnIndex(DBStructure.YEAR));
+            @SuppressLint("Range") String next6=cursor.getString(cursor.getColumnIndex(DBStructure.DESCRIPTION));
+
+            Events events=new Events(next,next2,next3,next4,next5,next6);
+            eventList.add(events);
+            Log.d("eventSize", " uoo event size is: " + eventList.size());
+            //count = count +1;
+        }
+        helper.close();
+        cursor.close();
     }
 
     public ArrayList<Events> EventListHelper(String date){

@@ -55,6 +55,7 @@ public class DetailsActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+
                 //Debug
                 //Toast.makeText(DetailsActivity.this, "Delete btn is Clicked", Toast.LENGTH_SHORT).show();
                 db.deleteNote(note.getID());
