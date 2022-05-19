@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.DBCalendarTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-19T09:55:16" hostname="LAPTOP-6VNC07M6" time="5.257">
-  <properties/>
-  <testcase name="testSaveAndReadEvent" classname="com.example.project.DBCalendarTest" time="5.257"/>
-  <system-out><![CDATA[resources.arsc in APK 'C:\Users\gothi\.m2\repository\org\robolectric\android-all-instrumented\12.1-robolectric-8229987-i4\android-all-instrumented-12.1-robolectric-8229987-i4.jar' is compressed.
-]]></system-out>
-  <system-err><![CDATA[[WARN] Unknown chunk type '200'.
-]]></system-err>
-</testsuite>
